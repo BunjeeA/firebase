@@ -120,3 +120,11 @@ function makeSingleMessageHTML(usernameTxt, messageTxt){
  * 
  * @BONUS use an arrow function
  */
+let formElem = document.querySelector("form");
+formElem.onkeyup = (event) => {
+    // check if the key released is the Enter key
+    if (event.keyCode === 13) {
+        // call the updateDB function manually
+        updateDB(event);
+    }
+}
