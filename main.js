@@ -66,7 +66,8 @@ function addMessageToBoard(rowData){
 
     //get the singleMessage using the makeSingleMessageHTML function
     let singleMessage = makeSingleMessageHTML(data.USERNAME, data.MESSAGE);
-
+    
+    //append the singleMessage to the allMessages div
     allMessages.append(singleMessage);
 }
 
